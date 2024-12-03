@@ -1,10 +1,14 @@
 #include <stdio.h>
+#include <stdlib.h>
+
 int main(){
 	int n;
 	int max = 0;
+
+	int *arr = NULL;
+	arr = (int*) malloc(n * sizeof(int));
 	printf("Nhap n :");
 	scanf("%d",&n);
-	int arr[n];
 	for(int i =0;i< n;i++){
 		printf("Nhap phan tu %d :", i+1);
 		scanf("%d",&arr[i]);
